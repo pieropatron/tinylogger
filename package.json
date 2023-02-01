@@ -3,8 +3,10 @@
 	"version": "1.0.0",
 	"description": "tiny nodejs logger",
 	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
 		"build": "tsc",
+		"prepare": "tsc",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "pieropatron",
@@ -16,5 +18,8 @@
 		"eslint": "^7.29.0",
 		"eslint-ast-utils": "^1.1.0",
 		"typescript": "^3.9.10"
-	}
+	},
+	"files": [
+		"/dist"
+	]
 }
