@@ -4,7 +4,7 @@
 	"description": "tiny nodejs logger",
 	"main": "dist/index.js",
 	"scripts": {
-		"build:all": "tsc",
+		"build": "tsc",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "pieropatron",
