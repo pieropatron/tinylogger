@@ -7,13 +7,13 @@ Additionally to standard methods, like "info", "warn", "error", "fatal", "debug"
 Idea of this project is to have simple to use, extendable Logger, which will have only functionalities to get colorizeds log in console. I was very liked log4js logger (https://github.com/log4js-node/log4js-node), but it's really big, relatively complex and has too much redundant functionality for me.
 
 ## Install
-`npm install https://github.com/pieropatron/tinylogger`
+`npm install @pieropatron/tinylogger`
 
 
 ## Create new logger
 As logger in really tiny, no configuration required, only the name of Logger
 ``` javascript
-const {Logger} = require('tinylogger');
+const {Logger} = require('@pieropatron/tinylogger');
 const logger = new Logger('Example logger');
 ```
 
@@ -21,9 +21,9 @@ const logger = new Logger('Example logger');
 In fact Logger supports only 2 levels: "info" and "debug" and following realization looks like not best choice, but it allows to be compatible with log4js
 ``` javascript
 // to enable debug level messages
-logger.level = "debug"; 
+logger.level = "debug";
 // to disable debug level messages
-logger.level = "info"; 
+logger.level = "info";
 ```
 
 ## Standard methods
@@ -60,7 +60,7 @@ update_child(); // write in console: [2023-02-04T12:39:11.272] [DEBUG] Update db
 Note: "child" Logger will not depend on "parent" Logger somehow after creation. Thus, if you change level for parent Logger, it will not changes for "children".
 
 ## Log durations
-For console in nodejs we have time and timeEnd methods for this goals. But it's not comfortable to use for me, as it displays duration in millis and requires to remember names of labels for correct results of timeEnd. Also, it is not configurable to set level of logging of durations, which is often required. Thus, method "time" of Logger will require 2 arguments: 
+For console in nodejs we have time and timeEnd methods for this goals. But it's not comfortable to use for me, as it displays duration in millis and requires to remember names of labels for correct results of timeEnd. Also, it is not configurable to set level of logging of durations, which is often required. Thus, method "time" of Logger will require 2 arguments:
 * name : string, name of time label, mandatory
 * level: "debug" or "info", level of logging, optional, default is "debug".
 

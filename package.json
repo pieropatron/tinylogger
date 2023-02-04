@@ -1,25 +1,38 @@
 {
-	"name": "tinylogger",
-	"version": "1.0.0",
-	"description": "tiny nodejs logger",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"scripts": {
-		"build": "tsc",
-		"prepare": "tsc",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "pieropatron",
-	"license": "ISC",
-	"devDependencies": {
-		"@types/node": "14.0.4",
-		"@typescript-eslint/eslint-plugin": "^4.28.0",
-		"@typescript-eslint/parser": "^4.28.0",
-		"eslint": "^7.29.0",
-		"eslint-ast-utils": "^1.1.0",
-		"typescript": "^3.9.10"
-	},
-	"files": [
-		"/dist"
-	]
+  "name": "@pieropatron/tinylogger",
+  "version": "1.0.0",
+  "description": "tiny nodejs logger",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pieropatron/tinylogger.git"
+  },
+  "keywords": [
+    "tiny",
+    "nodejs",
+    "logger"
+  ],
+  "author": "pieropatron",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "14.0.4",
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-ast-utils": "^1.1.0",
+    "typescript": "^3.9.10"
+  },
+  "files": [
+    "/dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/pieropatron/tinylogger/issues"
+  },
+  "homepage": "https://github.com/pieropatron/tinylogger#readme"
 }
