@@ -63,6 +63,7 @@ Note: "child" Logger will not depend on "parent" Logger somehow after creation. 
 For console in nodejs we have time and timeEnd methods for this goals. But it's not comfortable to use for me, as it displays duration in millis and requires to remember names of labels for correct results of timeEnd. Also, it is not configurable to set level of logging of durations, which is often required. Thus, method "time" of Logger will require 2 arguments: 
 * name : string, name of time label, mandatory
 * level: "debug" or "info", level of logging, optional, default is "debug".
+
 And it returns a function to call in required moment.
 
 ``` javascript
