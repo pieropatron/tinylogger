@@ -79,15 +79,11 @@ export class Logger {
 		return this;
 	}
 
-	log(...args: any[]): this {
-		console.log(...args);
-		return this;
-	}
-
 	dashline(len = 100): this {
 		len = len || 100;
 		if (len < 0) throw new Error(`Invalid dashline length`);
-		return this.log("".padStart(len, "-"));
+		console.log("".padStart(len, "-"));
+		return this;
 	}
 
 	get level(): 'debug' | 'info' { return this._b_debug ? 'debug' : 'info'; }
