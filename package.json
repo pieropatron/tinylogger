@@ -1,6 +1,6 @@
 {
   "name": "@pieropatron/tinylogger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tiny nodejs logger",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/pieropatron/tinylogger/issues"
   },
-  "homepage": "https://github.com/pieropatron/tinylogger#readme"
+  "homepage": "https://github.com/pieropatron/tinylogger",
+  "publishConfig": {
+    "access": "public"
+  }
 }
