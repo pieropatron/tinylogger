@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "prepare": "tsc",
-    "test": "exit 0"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,6 @@
   ],
   "author": "pieropatron",
   "license": "MIT",
-  "files": [
-    "/dist"
-  ],
   "bugs": {
     "url": "https://github.com/pieropatron/tinylogger/issues"
   },
@@ -32,5 +29,11 @@
     "publishConfig": {
       "pieropatron:registry": "https://npm.pkg.github.com"
     }
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.1",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.9.4"
   }
 }

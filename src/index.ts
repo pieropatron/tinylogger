@@ -45,7 +45,7 @@ function color_log(name: string, level_code: LEVEL_CODE, ...args: any[]) {
 }
 
 export class Logger {
-	private name: string;
+	readonly name: string;
 	private _b_debug = false;
 
 	constructor(name: string){
