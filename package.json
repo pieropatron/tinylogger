@@ -28,6 +28,9 @@
   },
   "homepage": "https://github.com/pieropatron/tinylogger",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "publishConfig": {
+      "pieropatron:registry": "https://npm.pkg.github.com"
+    }
   }
 }
