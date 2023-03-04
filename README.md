@@ -1,6 +1,9 @@
 # tinylogger
 tiny logger for node js
 
+[![NPM version](https://img.shields.io/npm/v/@pieropatron/tinylogger.svg?style=flat-square)](https://www.npmjs.com/package/@pieropatron/tinylogger)
+[![NPM downloads](https://img.shields.io/npm/dm/@pieropatron/tinylogger.svg?style=flat-square)](https://www.npmjs.com/package/@pieropatron/tinylogger)
+
 Well, this is the one of my "bicycles" projects, tiny logger, which writes logs to console in log4js like format: `[${datetime}] [${level}] ${name} - ${msg0} ${msg1} ... ${msgN}`.
 
 Additionally to standard methods, like "info", "warn", "error", "fatal", "debug" also appended methods to create child logger and to log durations.
