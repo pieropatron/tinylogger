@@ -19,6 +19,7 @@ type LEVEL_ITEM = {
 };
 
 type LEVEL_OBJ = {
+	// eslint-disable-next-line no-unused-vars
 	[k in LEVEL_CODE]: LEVEL_ITEM;
 }
 
